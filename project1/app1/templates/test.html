@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+<h1>Test Form</h1>
+<form onsubmit="myFunction();" action="../submitted" class="forms(to style css)">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <input type="checkbox"><br>
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday"><br>
+    <label for="datemax">Enter a date before 1980-01-01:</label>
+    <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+    <label for="datemin">Enter a date after 2000-01-01:</label>
+    <input type="date" id="datemin" name="datemin" min="2000-01-02"><br>
+    <label for="birthdaytime">Birthday (date and time):</label>
+    <input type="datetime-local" id="birthdaytime" name="birthdaytime"><br><br>
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="phone">Enter your phone number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{8}" placeholder="12345678"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<script language="javascript">
+    function myFunction() {
+        alert('submitted');
+    }
+</script>
+
+</body>
+</html>
